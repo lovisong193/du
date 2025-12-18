@@ -1,0 +1,13 @@
+<div class="just-content">
+  <div class="img" *ngFor="let u of content">
+    <img [src]="u.Image" alt="" class="thumnail" />
+    <div class="chia">
+      <div><img [src]="u.url" alt="" class="channel-pic" /></div>
+      <div>
+        <p class="name">{{ u.name }}</p>
+        <p class="channelName">{{ u.channelName }}</p>
+        <p class="view">{{ u.view }}</p>
+      </div>
+    </div>
+  </div>
+</div>

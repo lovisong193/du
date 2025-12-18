@@ -6,5 +6,29 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
-  @Input() expanded = true;
+  @Input() expanded = false;
+
+  channel = [
+    {
+      name: 'LolElekktro',
+    },
+    {
+      name: 'THÙY CHI',
+    },
+    {
+      name: 'DZUS Records',
+    },
+    {
+      name: ' Lion Heart',
+    },
+    {
+      name: 'Trực Tiếp Game',
+    },
+    {
+      name: 'Phê Game',
+    },
+    {
+      name: 'DOLLARplays',
+    },
+  ];
 }

@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./mainlayout.component.scss'],
 })
 export class MainlayoutComponent {
-  sidebarExpanded = true;
+  sidebarExpanded = false;
+
+  constructor() {}
 
   toggleSidebar() {
     this.sidebarExpanded = !this.sidebarExpanded;
