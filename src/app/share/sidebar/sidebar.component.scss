@@ -1,0 +1,40 @@
+.sidebar {
+  width: 72px;
+  background: #0a2a66;
+  transition: width 0.25s ease;
+  overflow: hidden;
+}
+
+.sidebar.expanded {
+  width: 240px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 30px 19px 30px 19px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.item i {
+  font-size: 20px;
+}
+
+.item span {
+  white-space: nowrap;
+}

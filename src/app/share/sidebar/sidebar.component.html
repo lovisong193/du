@@ -1,0 +1,35 @@
+<nav class="sidebar" [class.expanded]="expanded">
+  <div class="menu mini" *ngIf="!expanded">
+    <button class="item">
+      <i class="pi pi-home"></i>
+    </button>
+    <button class="item">
+      <i class="pi pi-video"></i>
+    </button>
+    <button class="item">
+      <i class="pi pi-users"></i>
+    </button>
+    <button class="item">
+      <i class="pi pi-user"></i>
+    </button>
+  </div>
+
+  <div class="menu full" *ngIf="expanded">
+    <button class="item">
+      <i class="pi pi-home"></i>
+      <span>Trang chủ</span>
+    </button>
+    <button class="item">
+      <i class="pi pi-video"></i>
+      <span>Shorts</span>
+    </button>
+    <button class="item">
+      <i class="pi pi-users"></i>
+      <span>Kênh đăng ký</span>
+    </button>
+    <button class="item">
+      <i class="pi pi-user"></i>
+      <span>Bạn</span>
+    </button>
+  </div>
+</nav>
