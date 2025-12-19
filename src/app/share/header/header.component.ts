@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +10,11 @@ export class HeaderComponent {
 
   onToggle() {
     this.toggleSidebar.emit();
+  }
+
+  channelToggle = false;
+
+  toggleChannel() {
+    this.channelToggle = !this.channelToggle;
   }
 }

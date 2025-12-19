@@ -2,7 +2,7 @@
   <div class="header-container">
     <div class="left-section">
       <button class="pi pi-bars" (click)="onToggle()"></button>
-      <button class="btn-youtube" style="width: 150px" ;>
+      <button class="btn-youtube" style="width: 150px" ; routerLink="">
         <img src="../../../assets/img/icons/youtube-logo.svg" alt="" />
       </button>
     </div>
@@ -20,13 +20,16 @@
           <img src="../../../assets/img/icons/notifications.svg" alt="" />
         </button>
         <div>
-          <button class="btn-channel">
+          <button class="btn-channel" (click)="toggleChannel()">
             <img
               class="channel"
               src="../../../assets/img/channel-picture/unnamed.jpg"
               alt=""
             />
           </button>
+          <div class="drop-menu" *ngIf="channelToggle">
+            <app-drop-menu></app-drop-menu>
+          </div>
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
 <div class="container">
-  <app-header (toggleSidebar)="toggleSidebar()"></app-header>
-
+  <app-header class="header" (toggleSidebar)="toggleSidebar()"></app-header>
   <div class="layout">
-    <app-sidebar [expanded]="sidebarExpanded"></app-sidebar>
+    <app-sidebar class="sidebar" [expanded]="sidebarExpanded"></app-sidebar>
 
     <main class="content" style="background-color: lightblue">
       <router-outlet></router-outlet>

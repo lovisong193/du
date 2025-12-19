@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ShareModule } from './share/share.module';
 import { LayoutModule } from './layout/layout.module';
 import { ContentModule } from './content/content.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StuLayoutModule } from './stu/stu-layout/stu-layout.module';
+import { BtnLayoutModule } from './btn-layout/btn-layout/btn-layout.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +18,9 @@ import { ContentModule } from './content/content.module';
     ShareModule,
     LayoutModule,
     ContentModule,
+    BrowserAnimationsModule,
+    StuLayoutModule,
+    BtnLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
