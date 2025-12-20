@@ -1,1 +1,22 @@
-<p>dif-sidebar works!</p>
+<nav class="dif-sidebar" [class.expanded]="expaned">
+    <div class="mini sidebar" *ngIf="!expaned">    
+                    <button class="img"><img src="../../../assets/img/channel-picture/unnamed.jpg" alt=""></button>
+            <div class="long" *ngFor="let daTa of iconItem">
+               <button> <i [class]="daTa.icon"></i> </button>
+            </div>
+    </div>
+
+    <div class="full sidebar" *ngIf="expaned">
+        <div class="my-channel" *ngFor="let host of host">
+            <div class="my-img"><img [src]="host.img" alt=""></div>
+            <div class="my-label"><p>{{host.label}}</p></div>
+            <div class="my-name"><p>{{host.name}}</p></div>
+        </div>
+        <div class="option" *ngFor="let option of iconItem">
+           <button>
+            <i [class]="option.icon"></i>
+            <span>{{option.label}}</span>
+           </button>
+        </div>
+    </div>
+</nav>

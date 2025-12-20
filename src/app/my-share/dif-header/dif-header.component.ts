@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dif-header',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dif-header.component.scss']
 })
 export class DifHeaderComponent {
+@Output() toggleStuSidebar = new EventEmitter<void>();
 
+  onToggle() {
+    this.toggleStuSidebar.emit();
+  }
 }

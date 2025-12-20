@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./another-layout.component.scss']
 })
 export class AnotherLayoutComponent {
+  sidebarStuExpanded = false;
+
+  constructor() {}
+
+  toggleStuSidebar() {
+    this.sidebarStuExpanded = !this.sidebarStuExpanded;
+  }
 
 }
