@@ -1,2 +1,7 @@
-<app-dif-header></app-dif-header>
-<app-dif-sidebar></app-dif-sidebar>
+<div class="container">
+    <div class="header"><app-dif-header (toggleStuSidebar)="toggleStuSidebar()"></app-dif-header></div>
+    <div class="main-container">
+        <app-dif-sidebar [expanded]="sidebarStuExpanded"></app-dif-sidebar>
+        <div class="content"><router-outlet></router-outlet></div>
+    </div>
+</div>

@@ -10,6 +10,7 @@ export class MainlayoutComponent {
 
   constructor() {}
 
+
   toggleSidebar() {
     this.sidebarExpanded = !this.sidebarExpanded;
   }

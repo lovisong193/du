@@ -7,7 +7,7 @@ import { hostData, iconItem  } from 'src/app/model/menu-item-model';
   styleUrls: ['./dif-sidebar.component.scss']
 })
 export class DifSidebarComponent {
-  @Input() expaned = true;
+  @Input() expanded = true;
 
   iconItem: iconItem[] = [
   {

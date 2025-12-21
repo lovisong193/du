@@ -8,6 +8,7 @@ import { YouLayoutComponent } from './btn-layout/you-layout/you-layout.component
 import { StuLayoutModule } from './stu/stu-layout/stu-layout.module';
 import { AnotherLayoutComponent } from './stu/another-layout/another-layout.component';
 import { DifHeaderComponent } from './my-share/dif-header/dif-header.component';
+import { StuContentComponent } from './content/stu-content/stu-content.component';
 
 const routes: Routes = [
   {
@@ -55,7 +56,10 @@ const routes: Routes = [
   {
     path: 'stu',
     component: AnotherLayoutComponent,
-    children: [{ path: '', component: AnotherLayoutComponent }],
+    children: [{
+      path: '',
+      component: StuContentComponent,
+    }]
   },
 ];
 
