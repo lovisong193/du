@@ -1,9 +1,11 @@
 .sidebar {
   width: 72px;
-  background: #0a2a66;
+  background: #ffffff;
   transition: width 0.25s ease;
   overflow: hidden;
   position: sticky;
+  top: 56px;
+
 }
 
 .sidebar.expanded {
@@ -23,13 +25,13 @@
   padding: 30px 19px 30px 19px;
   background: none;
   border: none;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   border-radius: 8px;
 }
 
 .item:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(165, 165, 165, 0.15);
 }
 
 .item i {

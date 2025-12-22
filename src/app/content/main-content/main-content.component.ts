@@ -49,5 +49,77 @@ export class MainContentComponent {
       view: ' 9,1Tr lượt xem | 7 năm trước',
       Image: 'assets/img/thumnail/thumbnail-2.webp',
     },
+    {
+      url: 'assets/img/channel-picture/channel-2.jpeg',
+      name: 'Oh Its You',
+      channelName: 'captain Sparrow',
+      view: ' 12Tr lượt xem | 10 năm trước',
+      Image: 'assets/img/thumnail/thumbnail-2.webp',
+    },
+    {
+      url: 'assets/img/channel-picture/channel-6.jpeg',
+      name: 'Streamer Mỹ',
+      channelName: 'captain chef',
+      view: ' 9,1Tr lượt xem | 7 năm trước',
+      Image: 'assets/img/thumnail/thumbnail-4.webp',
+    },
+    {
+      url: 'assets/img/channel-picture/channel-1.jpeg',
+      name: 'Streamer Mỹ',
+      channelName: 'captain chef',
+      view: ' 9,1Tr lượt xem | 7 năm trước',
+      Image: 'assets/img/thumnail/thumbnail-3.webp',
+    },
   ];
+
+  btn = [
+    
+  {
+    name: 'Tất cả',
+  }
+  ,
+  {
+    name: 'Âm nhạc',
+
+  }
+  ,
+  {
+    name: 'Danh sách kết hợp',
+  }
+  ,
+  {
+    name: 'Trò chơi',
+  }
+  ,
+  {
+    name: 'Podcast',
+  }
+  ,
+  {
+    name: 'Trò chơi phiêu lưu',
+  }
+  ,
+  {
+    name: 'Đọc rap',
+  }
+  ,
+  {
+    name: 'Hoạt ảnh'
+  }
+  ,
+  {
+    name: 'Bóng đá'
+  }
+  ,
+  {
+    name: 'Mới tải lên gần đây'
+  }
+  ,
+  {
+    name: 'Đã xem'
+  }
+  
+
+
+]
 }

@@ -1,8 +1,35 @@
+.btn-main {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 50px;
+  button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;     
+    flex-shrink: 0;        
+    white-space: nowrap;  
+   
+  }
+  button:hover {
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s;
+    color: white;
+  }
+  
+}
+
+
 .just-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 20px;
+  padding-top: 20px;
 }
 
 .thumnail {
