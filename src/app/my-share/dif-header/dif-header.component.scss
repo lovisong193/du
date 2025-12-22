@@ -103,7 +103,7 @@
     border-radius: 100%;
     cursor: pointer;
     border: none;
-     font-size: 22px;
+    font-size: 22px;
   }
 
   .pi-bell:hover {
@@ -131,7 +131,46 @@
     border-radius: 100%;
     cursor: pointer;
     border: none;
+  }
+
+  @media (min-width: 801px) {
+    .pi-search-hide {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    opacity: 0;
+    pointer-events: none;
+  }
+    
+  }
+  
+
+ @media (max-width: 800px) {
+  .mid {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .pi-search-hide {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
   }
 
- 
+  .pi-search-hide:hover {
+    background-color: red;
+    transition: 0.2s;
+  }
+ }

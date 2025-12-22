@@ -158,7 +158,8 @@
 
 @media (max-width: 800px) {
   .search-input {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
   }
   .mid-section {
     justify-content: flex-end;
@@ -172,10 +173,5 @@
     height: 40px;
     border-radius: 100%;
   }
-  .btn-voice-search {
-    background-color: #fff;
-    img {
-      color: red;
-    }
-  }
+ 
 }
