@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -52,8 +52,19 @@ export class ButtonComponent {
   {
     name: 'Đã xem'
   }
-  
-
-
+  , 
+  {
+    name: 'Hoạt động gần đây'
+  }
 ]
+
+@ViewChild('scrollBox') scrollBox!: ElementRef;
+
+scrollLeft() {
+  this.scrollBox.nativeElement.scrollLeft -= 300;
+}
+
+scrollRight() {
+  this.scrollBox.nativeElement.scrollLeft += 300;
+}
 }
