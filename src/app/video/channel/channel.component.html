@@ -1,0 +1,25 @@
+<div class="dropMenu-container">
+  <div class="mychannel" *ngFor="let data of myData">
+    <div class="image-channel">
+      <img [src]="data.Image" alt="" class="image" />
+    </div>
+    <div class="name-channel">
+      <p>@tuanvu5571</p>
+      <p>{{ data.name }}</p>
+      <a routerLink="/stu"> Xem kênh của bạn</a>
+    </div>
+  </div>
+
+  <div class="scroll">
+    <div class="info" *ngFor="let anotherData of menuItem">
+      <i [class]="anotherData.icon"></i>
+
+      <span class="span">{{ anotherData.label }}</span>
+      <div
+        class="border"
+        *ngIf="anotherData.hasBoolean"
+        style="padding: 2px"
+      ></div>
+    </div>
+  </div>
+</div>

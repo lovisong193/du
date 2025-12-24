@@ -9,6 +9,8 @@ import { StuLayoutModule } from './stu/stu-layout/stu-layout.module';
 import { AnotherLayoutComponent } from './stu/another-layout/another-layout.component';
 import { DifHeaderComponent } from './my-share/dif-header/dif-header.component';
 import { StuContentComponent } from './content/stu-content/stu-content.component';
+import { VideolayoutComponent } from 'src/videolayout/videolayout/videolayout.component';
+import { VideoContentComponent } from './content/video-content/video-content.component';
 
 const routes: Routes = [
   {
@@ -61,6 +63,17 @@ const routes: Routes = [
       component: StuContentComponent,
     }]
   },
+
+  {
+    path: 'video',
+    component: VideolayoutComponent,
+    children: [
+      {
+        path: '',
+        component: VideoContentComponent,
+      }
+    ]
+  }
 ];
 
 @NgModule({

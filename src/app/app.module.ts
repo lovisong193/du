@@ -9,6 +9,9 @@ import { ContentModule } from './content/content.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StuLayoutModule } from './stu/stu-layout/stu-layout.module';
 import { BtnLayoutModule } from './btn-layout/btn-layout/btn-layout.module';
+import { VideoModule } from './video/video/video.module';
+import { VideolayoutModule } from 'src/videolayout/videolayout.module';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +24,7 @@ import { BtnLayoutModule } from './btn-layout/btn-layout/btn-layout.module';
     BrowserAnimationsModule,
     StuLayoutModule,
     BtnLayoutModule,
+    VideoModule,VideolayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,37 @@
+<header>
+  <div class="header-container">
+    <div class="left-section">
+      <button class="pi pi-bars" (click)="onToggle()"></button>
+      <button class="btn-youtube" style="width: 150px" ; routerLink="">
+        <img src="../../../assets/img/icons/youtube-logo.svg" alt="" />
+      </button>
+    </div>
+    <div class="mid-section">
+      <input class="search-input" type="text" placeholder="Search" />
+      <button class="pi pi-search"></button>
+      <button class="btn-voice-search">
+        <img src="../../../assets/img/icons/voice-search-icon.svg" />
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="butt-right">
+        <button class="btn-create">+ Tạo</button>
+        <button class="btn-noti">
+          <img src="../../../assets/img/icons/notifications.svg" alt="" />
+        </button>
+        <div>
+          <button class="btn-channel" (click)="toggleChannel()">
+            <img
+              class="channel"
+              src="../../../assets/img/channel-picture/unnamed.jpg"
+              alt=""
+            />
+          </button>
+          <div class="drop-menu" *ngIf="channelToggle">
+            <app-channel></app-channel>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

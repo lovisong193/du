@@ -1,0 +1,66 @@
+.dropMenu-container {
+  position: absolute;
+  top: 1rem;
+  right: 6rem;
+  background-color: lightpink;
+  width: 300px;
+  border-radius: 30px;
+  z-index: 1000;
+}
+
+.mychannel {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  padding: 16px;
+  border-bottom: 1px solid #020202;
+  .image {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  .image-channel {
+    display: flex;
+    align-items: center;
+  }
+  .name-channel {
+    p {
+      margin: 0;
+      padding: 5px;
+    }
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  .pi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .span {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+  }
+}
+
+.border {
+  border-top: 1px solid #020202;
+  grid-column: 1/ -1;
+}
+
+.scroll {
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
