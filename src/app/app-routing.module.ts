@@ -21,38 +21,23 @@ const routes: Routes = [
         path: '',
         component: MainContentComponent,
       },
-    ],
-  },
-  {
-    path: 'home',
-    component: MainlayoutComponent,
-    children: [
       {
-        path: '',
-        component: MainContentComponent,
+        path: 'home',
+        component: MainContentComponent
       },
-    ],
-  },
-  {
-    path: 'shorts',
-    component: MainlayoutComponent,
-    children: [
       {
-        path: '',
+        path: 'shorts',
         component: BtnLayoutComponent,
       },
+      {
+        path: 'sub',
+        component: SubComponent,
+      },
+      {
+        path: 'you',
+        component: YouLayoutComponent
+      }
     ],
-  },
-  {
-    path: 'sub',
-    component: MainlayoutComponent,
-    children: [{ path: '', component: SubComponent }],
-  },
-
-  {
-    path: 'you',
-    component: MainlayoutComponent,
-    children: [{ path: '', component: YouLayoutComponent }],
   },
 
   {
@@ -64,7 +49,7 @@ const routes: Routes = [
     }]
   },
 
-  {
+  { 
     path: 'video',
     component: VideolayoutComponent,
     children: [
