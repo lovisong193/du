@@ -1,0 +1,154 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    height: 100vh;
+}
+
+.left {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .video {
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .video-name {
+        font-size: 22px;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    .channel-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        .channel-name {
+            display: grid;
+            grid-template-columns: 60px 1fr 1fr;
+            align-items: center;
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }
+            
+            .name {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                #n1 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000000;
+                }
+
+                #n2 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ff0000;
+                }
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                opacity: 0.7;
+                transition: 0.2s;
+            }
+
+            
+        }
+    }
+
+    .just-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        button {
+            padding: 10px 10px;
+            display: flex;
+            white-space: nowrap;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+                margin-left: 5px;
+            }
+        }
+
+        button:hover {
+            opacity: 0.5;
+            transition: 0.2s
+        }
+        }
+
+
+        .count {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            align-items: center;
+
+            .count-binhLuan {
+                font-size: 22px;
+                font-weight: 600;
+                padding-right: 30px;
+            }
+
+            .count-sapXep {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        .person-comment {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            
+            .img {
+               img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                object-fit: cover;
+               } 
+            }
+
+            .thumb {
+                button {
+                    padding: 10px;
+                    border: none;
+                    border-radius: 20px;
+                    margin:2px 5px 0 0;
+                }
+            }
+
+            .name {
+                font-weight: 700;
+            }
+
+            .comment {
+                padding: 5px 0;
+            }
+        }
+    }
+
+

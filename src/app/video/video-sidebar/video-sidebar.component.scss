@@ -1,0 +1,46 @@
+.sidebar {
+  width: 0;
+  background: #ffffff;
+  transition: width 0.5s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+}
+
+.mini {
+  display: none;
+} 
+
+.sidebar.expanded {
+  width: 240px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 30px 19px 30px 19px;
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.item:hover {
+  background: rgba(165, 165, 165, 0.15);
+}
+
+.item i {
+  font-size: 20px;
+}
+
+.item span {
+  white-space: nowrap;
+}

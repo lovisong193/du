@@ -6,15 +6,20 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./video-header.component.scss']
 })
 export class VideoHeaderComponent {
- @Output() toggleSidebar = new EventEmitter<void>();
+ @Output() toggleSidebarVideo = new EventEmitter<void>();
 
-  onToggle() {
-    this.toggleSidebar.emit();
+
+  onSidebarToggle() {
+    this.toggleSidebarVideo.emit();
   }
 
   channelToggle = false;
 
   toggleChannel() {
     this.channelToggle = !this.channelToggle;
+  }
+
+  tog() {
+    console.log(alert('clicked'));
   }
 }

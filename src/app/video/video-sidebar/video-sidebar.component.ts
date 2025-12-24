@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-video-sidebar',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./video-sidebar.component.scss']
 })
 export class VideoSidebarComponent {
-
+ @Input() expandedVideo = false;
 }

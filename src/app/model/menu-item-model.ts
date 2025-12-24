@@ -17,4 +17,3 @@ export interface hostData {
   img: 'assets/img/channel-picture/unnamed.jpg';
   name?: string;
 }
-

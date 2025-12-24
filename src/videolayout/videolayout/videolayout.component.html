@@ -1,8 +1,11 @@
 <div class="video-container">
     <div class="video-header">
-        <app-video-header></app-video-header>
+        <app-video-header (toggleSidebarVideo)="toggleSidebarVideo()"></app-video-header>
     </div>
     <div class="video-main">
-        <router-outlet></router-outlet>
+        <div class="overlay"*ngIf="sidebarExpandedVideo"></div>
+        <div class="video-sidebar" > <app-video-sidebar [expandedVideo]="sidebarExpandedVideo"></app-video-sidebar></div>
+        <div class="video-content" [class.change] = "sidebarExpandedVideo"><router-outlet></router-outlet></div>
     </div>
 </div>
+    

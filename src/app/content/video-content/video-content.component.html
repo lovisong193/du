@@ -1,1 +1,47 @@
-<p>video-content works!</p>
+<div class="container">
+    <div class="left" >
+        <div class="video">
+            <img src="../../../assets/img/thumnail/thumbnail-1.webp" alt="">
+        </div>
+        <div class="video-name"><span>SOOBIN - HEYYY | 'BẬT NÓ LÊN' (OFFICIAL MV)</span></div>
+        <div class="channel-container">
+            <div class="channel-name">
+                <div><img src="../../../assets/img/channel-picture/unnamed.jpg" alt=""></div>
+                <div class="name"><span id="n1">SOOBIN Offcial</span><span id="n2">566N người đăng ký</span></div>
+                <div><button>Đăng ký</button></div>
+            </div>
+            <div class="just-btn">
+                <div class="btn1" ><button class="pi pi-thumbs-up-fill"><p>333 N</p></button></div>
+                <div class="btn2"><button class="pi pi-thumbs-down"></button></div>
+                <div class="btn3"><button class="pi pi-share-alt"><p>Chia sẻ</p></button></div>
+                <div class="btn4"><button class="pi pi-save"><p>Lưu</p></button></div>
+                <div class="btn5"><button class="pi pi-bolt"><p>Tạo đoạn cắt</p></button></div>
+                <div class="btn6"><button class="pi pi-ellipsis-h"></button></div>
+            </div>
+        </div>
+        <div class="count">
+            <div class="count-binhLuan">1000 bình luận</div>
+            <div class="count-sapXep"><i class="pi pi-calculator"></i>Sắp xếp theo</div>
+        </div>
+        <div class="comment-container" *ngFor="let item of comment">
+            <div class="person-comment" >
+                <div class="img"><img [src]="item.img" alt=""></div>
+                <div class="detail-comment">
+                    <div class="name">{{item.name}}</div>
+                    <div class="comment">{{item.content}}</div>
+                    <div class="thumb">
+                        <button><i [class]="item.thumbup"></i></button>
+                        <button><i [class]="item.thumbdown"></i></button>
+                        <button>{{item.rep}}</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="right" style="background-color: lightblue;">
+        
+    </div>
+</div>
+

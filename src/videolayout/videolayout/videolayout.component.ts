@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./videolayout.component.scss']
 })
 export class VideolayoutComponent {
+ sidebarExpandedVideo = false;
+
+  constructor() {}
+
+
+  toggleSidebarVideo() {
+    this.sidebarExpandedVideo = !this.sidebarExpandedVideo;
+}
+ 
 
 }

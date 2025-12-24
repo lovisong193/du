@@ -1,1 +1,20 @@
-<p>video-sidebar works!</p>
+<nav class="sidebar" [class.expanded]="expandedVideo">
+  <div class="menu full" *ngIf="expandedVideo">
+    <button class="item">
+      <i class="pi pi-home"></i>
+      <span routerLink="/home">Trang chủ</span>
+    </button>
+    <button class="item">
+      <i class="pi pi-video"></i>
+      <span routerLink="/shorts">Shorts</span>
+    </button>
+    <button class="item">
+      <i class="pi pi-users"></i>
+      <span routerLink="/sub">Kênh đăng ký</span>
+    </button>
+    <button class="item">
+      <i class="pi pi-user"></i>
+      <span routerLink="/you">Bạn</span>
+    </button>
+  </div>
+</nav>
