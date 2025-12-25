@@ -18,6 +18,16 @@
   border-radius: 50%;
 }
 
+.dep {
+  border-radius: 10px;
+  border: none;
+}
+
+.dep:hover {
+  background-color: red;
+  transition: 0.2s;
+}
+
 .chia {
   display: grid;
   grid-template-columns: 50px 1fr;
