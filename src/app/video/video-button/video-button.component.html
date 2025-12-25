@@ -1,1 +1,11 @@
-<p>video-button works!</p>
+<div class="btn">
+  <div class="btn-wrapper">
+    <button class="left arrow" (click)="scrollLeft()"><</button>
+    <div class="btn-container" #scrollBox>
+      <div class="btn-main" >
+       <div *ngFor="let btn of btn"><button>{{btn.name}}</button></div>
+      </div>
+    </div>
+    <button class="right arrow" (click)="scrollRight()">></button>
+  </div>
+</div>

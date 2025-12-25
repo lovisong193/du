@@ -42,4 +42,54 @@ export class VideoContentComponent {
         rep: 'Phản hồi',
       }
     ]
+
+    selector = [{
+      thumnail: 'assets/img/thumnail/thumbnail-2.webp',
+      img: 'assets/img/channel-picture/unnamed.jpg',
+      name: 'SOOBIN - HEYYY (Offcial MV)',
+      view: '9,1Tr lẻt xem | 7 năm trước'
+    }
+    ,
+    {
+      thumnail: 'assets/img/thumnail/thumbnail-3.webp',
+      img: 'assets/img/channel-picture/unnamed.jpg',
+      name: 'Beggin - HERSHEY (Offcial MV)',
+      view: '9,1Tr lẻt xem | 7 năm trước'
+    }
+    ,
+    {
+      thumnail: 'assets/img/thumnail/thumbnail-4.webp',
+      img: 'assets/img/channel-picture/unnamed.jpg',
+      name: '7 days - HERSHEY (Offcial MV)',
+      view: '9,1Tr lẻt xem | 7 năm trước'
+    }
+    ,
+    {
+      thumnail: 'assets/img/thumnail/thumbnail-5.webp',
+      img: 'assets/img/channel-picture/unnamed.jpg',
+      name: 'SOOBIN - HEYYY (Offcial MV)',
+      view: '9,1Tr lẻt xem | 7 năm trước'
+    }
+    ,
+    {
+      thumnail: 'assets/img/thumnail/thumbnail-6.webp',
+      img: 'assets/img/channel-picture/unnamed.jpg',
+      name: 'Beggin - HERSHEY (Offcial MV)',
+      view: '9,1Tr lẻt xem | 7 năm trước'
+    }
+    ,
+    {
+      thumnail: 'assets/img/thumnail/thumbnail-2.webp',
+      img: 'assets/img/channel-picture/unnamed.jpg',
+      name: '7 days - HERSHEY (Offcial MV)',
+      view: '9,1Tr lẻt xem | 7 năm trước'
+    }
+    ,
+    {
+      thumnail: 'assets/img/thumnail/thumbnail-3.webp',
+      img: 'assets/img/channel-picture/unnamed.jpg',
+      name: 'SOOBIN - HEYYY (Offcial MV)',
+      view: '9,1Tr lẻt xem | 7 năm trước'
+    }
+  ]
 }
